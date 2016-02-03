@@ -1,4 +1,4 @@
-package com.mtime.client.retail.dao.common;
+package com.mtime.client.retail.dao.support;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

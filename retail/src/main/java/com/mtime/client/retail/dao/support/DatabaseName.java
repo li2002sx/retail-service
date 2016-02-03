@@ -1,4 +1,4 @@
-package com.mtime.client.retail.dao.common;
+package com.mtime.client.retail.dao.support;
 
 /**
  * @Title: DatabaseName

@@ -3,7 +3,7 @@ package com.mtime.client.retail.dao;
 import com.mtime.client.retail.dao.common.BaseDao;
 import com.mtime.client.retail.dao.support.DatabaseName;
 import com.mtime.client.retail.dao.support.MultipleDataSource;
-import com.mtime.client.retail.model.Order;
+import com.mtime.client.retail.model.Merchant;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -15,10 +15,10 @@ import org.springframework.stereotype.Repository;
  * @version: V1.0
  */
 @Repository
-public class OrderDao extends BaseDao {
+public class MerchantDao extends BaseDao {
 
-    public Order getOrderById(int orderId) {
-        MultipleDataSource.setDataSourceKey(DatabaseName.Retail);
-        return sqlSessionTemplate.selectOne("order.selectByOrderId", orderId);
+    public Merchant getMerchantById(int merchantId) {
+//        MultipleDataSource.setDataSourceKey(DatabaseName.Merchant);
+        return sqlSessionTemplate.selectOne("merchant.selectByMerchantId", merchantId);
     }
 }
